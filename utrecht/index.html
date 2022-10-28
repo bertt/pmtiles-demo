@@ -18,7 +18,7 @@
         <script>
             const map = L.map('map')
             let hash = new L.Hash(map)
-            if (!window.location.hash) map.setView(new L.LatLng(52.09173/5.11769),17)
+            if (!window.location.hash) map.setView(new L.LatLng(52.09173,5.11769),17)
             var layer = protomaps.leafletLayer({url:'utrecht.pmtiles'})
             layer.addTo(map)
             layer.addInspector(map)
